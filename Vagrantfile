@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
 
   # As eNform VM depends on Oracle install OracleVM first
-  config.vm.define "OracleVM" do |jenkins|
+  config.vm.define "jenkins" do |jenkins|
 	jenkins.vm.box = "ubuntu/trusty64"
 	jenkins.vm.network "private_network", ip: "10.1.1.2"
         jenkins.ssh.username = "vagrant"
